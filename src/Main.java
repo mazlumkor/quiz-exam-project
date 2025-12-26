@@ -1,7 +1,28 @@
 import java.util.Arrays;
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter your student ID: ");
+        String studentId = scanner.nextLine();
+
+        System.out.print("Enter your department: ");
+        String department = scanner.nextLine();
+
+        Student student = new Student(name, studentId, department);
+
+        System.out.println("\nWelcome " + student.getName() + " (" + student.getStudentId() + ")");
+        System.out.println("Department: " + student.getDepartment());
+        System.out.println("Press ENTER to start the exam...");
+        scanner.nextLine(); // start bekleme
+
 
         Quiz quiz = new Quiz();
 
