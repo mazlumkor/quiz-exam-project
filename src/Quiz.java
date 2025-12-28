@@ -9,6 +9,11 @@ public class Quiz {
     private Student student;
 
 
+    private long startTime;
+    private long examDuration = 5 * 60 * 1000; // 5 dakika
+
+
+
 
     public Quiz(Student student) {
         this.student = student;
@@ -24,7 +29,23 @@ public class Quiz {
     public void start() {
         Scanner scanner = new Scanner(System.in);
 
+        startTime = System.currentTimeMillis();
+        System.out.println("\nExam started! You have 5 minutes.");
+
+
+
         for (Question q : questions) {
+            long currentTime = System.currentTimeMillis();
+            long elapsedTime = currentTime - startTime;
+
+            if (elapsedTime >= examDuration) {
+                System.out.println("\nTime is over! Exam finished automatically.");
+                break;
+            }
+
+            long remaining = (examDuration - elapsedTime) / 1000;
+            System.out.println("Remaining Time: " + remaining + " seconds");
+
             System.out.println(q.getQuestionText());
 
             // Eğer Multiple Choice soru ise şıkları göster
