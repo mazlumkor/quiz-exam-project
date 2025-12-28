@@ -24,7 +24,8 @@ public class Main {
         scanner.nextLine(); // start bekleme
 
 
-        Quiz quiz = new Quiz();
+        Quiz quiz = new Quiz(student);
+
 
         // 5 True / False questions
         quiz.addQuestion(new TrueFalseQuestion(

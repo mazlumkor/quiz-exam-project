@@ -6,11 +6,16 @@ public class Quiz {
 
     private List<Question> questions;
     private int score;
+    private Student student;
 
-    public Quiz() {
+
+
+    public Quiz(Student student) {
+        this.student = student;
         questions = new ArrayList<>();
         score = 0;
     }
+
 
     public void addQuestion(Question question) {
         questions.add(question);
@@ -46,5 +51,15 @@ public class Quiz {
 
         System.out.println("Quiz finished!");
         System.out.println("Your Score: " + score + "/" + questions.size());
+        System.out.println("\n===== Exam Finished =====");
+        System.out.println("Student Name: " + student.getName());
+        System.out.println("Student ID: " + student.getStudentId());
+        System.out.println("Department: " + student.getDepartment());
+        System.out.println("Correct Answers: " + score + "/" + questions.size());
+
+        double percentage = (score * 100.0) / questions.size();
+        System.out.println("Score: " + percentage + "%");
+        System.out.println("=========================");
+
     }
 }
