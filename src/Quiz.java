@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Collections;
+
 
 public class Quiz {
 
@@ -31,6 +33,10 @@ public class Quiz {
 
         startTime = System.currentTimeMillis();
         System.out.println("\nExam started! You have 5 minutes.");
+
+        Collections.shuffle(questions);
+        System.out.println("Questions are shuffled randomly!");
+
 
 
 
