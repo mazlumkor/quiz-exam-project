@@ -38,8 +38,6 @@ public class Quiz {
         System.out.println("Questions are shuffled randomly!");
 
 
-
-
         for (Question q : questions) {
             long currentTime = System.currentTimeMillis();
             long elapsedTime = currentTime - startTime;
@@ -76,35 +74,23 @@ public class Quiz {
             System.out.println("---------------------");
         }
 
+        System.out.println("\n========= FINAL RESULT =========");
+        System.out.println("Student Name : " + student.getName());
+        System.out.println("Student ID   : " + student.getStudentId());
+        System.out.println("Department   : " + student.getDepartment());
+        System.out.println("Correct      : " + score + " / " + questions.size());
 
         double percentage = (score * 100.0) / questions.size();
-        System.out.println("Score Percentage: " + percentage + "%");
+        System.out.println("Percentage   : " + percentage + "%");
+
         if (percentage >= 60) {
-            System.out.println("Result: PASSED ");
+            System.out.println("Result       : PASSED ");
         } else {
-            System.out.println("Result: FAILED ");
+            System.out.println("Result       : FAILED ");
         }
 
-        System.out.println("==================================");
+        System.out.println("================================");
 
-
-        System.out.println("\n===== Exam Finished =====");
-        System.out.println("Student Name: " + student.getName());
-        System.out.println("Student ID: " + student.getStudentId());
-        System.out.println("Department: " + student.getDepartment());
-        System.out.println("Correct Answers: " + score + "/" + questions.size());
-
-
-        System.out.println("Score: " + percentage + "%");
-        System.out.println("=========================");
-
-        }
-    public int getTotalQuestionCount() {
-        return questions.size();
-    }
-
-    public int getScore() {
-        return score;
     }
 
 }
