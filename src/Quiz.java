@@ -76,7 +76,15 @@ public class Quiz {
             System.out.println("---------------------");
         }
 
-        System.out.println("Quiz finished!");
+        System.out.println("\n========== EXAM RESULT ==========");
+        System.out.println("Total Questions : " + questions.size());
+        System.out.println("Correct Answers : " + score);
+        System.out.println("Wrong Answers   : " + (questions.size() - score));
+
+        double percentage = (score * 100.0) / questions.size();
+        System.out.println("Score Percentage: " + percentage + "%");
+        System.out.println("==================================");
+
         System.out.println("Your Score: " + score + "/" + questions.size());
         System.out.println("\n===== Exam Finished =====");
         System.out.println("Student Name: " + student.getName());
@@ -84,7 +92,7 @@ public class Quiz {
         System.out.println("Department: " + student.getDepartment());
         System.out.println("Correct Answers: " + score + "/" + questions.size());
 
-        double percentage = (score * 100.0) / questions.size();
+
         System.out.println("Score: " + percentage + "%");
         System.out.println("=========================");
 
