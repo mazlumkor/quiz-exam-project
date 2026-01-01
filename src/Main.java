@@ -20,7 +20,15 @@ public class Main {
 
         System.out.println("\nWelcome " + student.getName() + " (" + student.getStudentId() + ")");
         System.out.println("Department: " + student.getDepartment());
+        System.out.println("\n===== EXAM RULES =====");
+        System.out.println("- You have 5 minutes to complete the exam");
+        System.out.println("- You cannot leave answers blank");
+        System.out.println("- Questions are shuffled randomly");
+        System.out.println("- Your result will be shown at the end");
+        System.out.println("======================");
         System.out.println("Press ENTER to start the exam...");
+        scanner.nextLine();
+
         scanner.nextLine(); // start bekleme
 
 
