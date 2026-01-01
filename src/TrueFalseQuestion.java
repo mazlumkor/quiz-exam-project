@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class TrueFalseQuestion extends Question {
 
     public TrueFalseQuestion(String questionText, String correctAnswer) {
@@ -6,6 +7,15 @@ public class TrueFalseQuestion extends Question {
 
     @Override
     public boolean checkAnswer(String userAnswer) {
+        userAnswer = userAnswer.trim().toLowerCase();
+
+        while (!userAnswer.equals("true") && !userAnswer.equals("false")) {
+            System.out.println("Invalid input! Please type only 'true' or 'false': ");
+            Scanner scanner = new Scanner(System.in);
+            userAnswer = scanner.nextLine().trim().toLowerCase();
+        }
+
         return userAnswer.equalsIgnoreCase(correctAnswer);
     }
+
 }
