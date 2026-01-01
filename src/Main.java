@@ -87,12 +87,6 @@ public class Main {
         quiz.start();
 
 
-        System.out.println("\n===== Exam Finished =====");
-        System.out.println("Student Name: " + student.getName());
-        System.out.println("Student ID: " + student.getStudentId());
-        System.out.println("Department: " + student.getDepartment());
-
-        System.out.println("Your Score: " + quiz.getScore() + " / " + quiz.getTotalQuestionCount());
 
     }
 }

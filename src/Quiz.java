@@ -76,16 +76,18 @@ public class Quiz {
             System.out.println("---------------------");
         }
 
-        System.out.println("\n========== EXAM RESULT ==========");
-        System.out.println("Total Questions : " + questions.size());
-        System.out.println("Correct Answers : " + score);
-        System.out.println("Wrong Answers   : " + (questions.size() - score));
 
         double percentage = (score * 100.0) / questions.size();
         System.out.println("Score Percentage: " + percentage + "%");
+        if (percentage >= 60) {
+            System.out.println("Result: PASSED ");
+        } else {
+            System.out.println("Result: FAILED ");
+        }
+
         System.out.println("==================================");
 
-        System.out.println("Your Score: " + score + "/" + questions.size());
+
         System.out.println("\n===== Exam Finished =====");
         System.out.println("Student Name: " + student.getName());
         System.out.println("Student ID: " + student.getStudentId());
