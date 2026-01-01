@@ -88,5 +88,16 @@ public class Quiz {
         System.out.println("Score: " + percentage + "%");
         System.out.println("=========================");
 
+        }
+    public int getTotalQuestionCount() {
+        return questions.size();
     }
+
+    public int getScore() {
+        return score;
+    }
+
 }
+
+
+
