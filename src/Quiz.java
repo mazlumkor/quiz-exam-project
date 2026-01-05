@@ -1,3 +1,5 @@
+// Manages quiz flow, timing and scoring
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

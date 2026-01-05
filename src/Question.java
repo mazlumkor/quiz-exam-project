@@ -1,3 +1,5 @@
+// Abstract base class for questions
+
 public abstract class Question {
 
     protected String questionText;

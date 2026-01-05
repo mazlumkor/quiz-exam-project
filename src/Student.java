@@ -1,3 +1,5 @@
+// Stores student personal information
+
 public class Student {
 
     private String name;
