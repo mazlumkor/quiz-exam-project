@@ -76,7 +76,9 @@ public class Quiz {
             System.out.println("---------------------");
         }
 
-        System.out.println("\n========= FINAL RESULT =========");
+        System.out.println("\n========== FINAL EXAM RESULT ==========");
+        System.out.println("Exam has been completed successfully.");
+        System.out.println("--------------------------------------");
         System.out.println("Student Name : " + student.getName());
         System.out.println("Student ID   : " + student.getStudentId());
         System.out.println("Department   : " + student.getDepartment());
