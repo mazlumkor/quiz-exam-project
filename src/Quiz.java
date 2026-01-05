@@ -10,6 +10,7 @@ public class Quiz {
 
     private List<Question> questions;
     private int score;
+
     private Student student;
 
 
@@ -96,6 +97,10 @@ public class Quiz {
         System.out.println("================================");
 
     }
+    public int getScore() {
+        return score;
+    }
+
 
 }
 
