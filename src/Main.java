@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Press ENTER to start the exam...");
         scanner.nextLine();
 
-        scanner.nextLine(); // start bekleme
+        scanner.nextLine();
 
 
         Quiz quiz = new Quiz(student);
@@ -93,6 +93,10 @@ public class Main {
                 "Encapsulation",
                 Arrays.asList("Encapsulation", "Polymorphism", "Abstraction", "Inheritance")
         ));
+
+        System.out.println("\nStudent information saved successfully.");
+        System.out.println("The exam will start shortly...");
+
 
         quiz.start();
 
