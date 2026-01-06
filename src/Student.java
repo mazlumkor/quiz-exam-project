@@ -1,4 +1,8 @@
 // Stores student personal information
+/**
+ * Student class represents a student who takes the quiz.
+ * It stores student information such as name, student ID and department.
+ */
 
 public class Student {
 

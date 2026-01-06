@@ -1,6 +1,10 @@
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * MultipleChoiceQuestion represents a question with multiple answer options.
+ * This class extends Question and overrides the answer checking behavior.
+ */
 
 public class MultipleChoiceQuestion extends Question {
 

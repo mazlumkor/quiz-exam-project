@@ -5,6 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Collections;
 
+/**
+ * Quiz class manages the overall exam process.
+ * It handles questions, timing, scoring and final result calculation.
+ * Each quiz is associated with a single student.
+ */
 
 public class Quiz {
 

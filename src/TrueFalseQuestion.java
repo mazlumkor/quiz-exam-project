@@ -1,4 +1,9 @@
 import java.util.Scanner;
+/**
+ * TrueFalseQuestion represents a question with only two possible answers: true or false.
+ * It extends the Question class and implements its own answer validation.
+ */
+
 public class TrueFalseQuestion extends Question {
 
     public TrueFalseQuestion(String questionText, String correctAnswer) {

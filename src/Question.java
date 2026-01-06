@@ -1,4 +1,8 @@
 // Abstract base class for questions
+/**
+ * Abstract Question class represents a generic quiz question.
+ * It defines common properties and methods for all question types.
+ */
 
 public abstract class Question {
 
